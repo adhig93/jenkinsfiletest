@@ -6,9 +6,8 @@ pipeline {
             steps {
                 sh '''
                     #!/bin/bash
-                    cd /var/lib/jenkins/workspace/pipeline_test/
-                    git clone https://github.com/adhig93/test_repo
                     cd /var/lib/jenkins/workspace/pipeline_test/test_repo
+                    git pull https://github.com/adhig93/test_repo
                     make
                    '''              
             }
