@@ -6,8 +6,8 @@ pipeline {
             steps {
                 sh '''
                     #!/bin/bash
-                    cd /home/ec2-user/jenkins/cpipeline/test_repo
-                    git pull
+                    cd /var/lib/jenkins/workspace/pipeline_test/test_repo
+                    git pull https://github.com/adhig93/test_repo
                     make
                    '''              
             }
