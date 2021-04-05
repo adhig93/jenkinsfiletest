@@ -8,11 +8,9 @@ pipeline {
             }
         }
     }
-    stages {
         stage('Stage2:Test') {
             steps {
                 echo 'This is Test Stage'
             }
         }
-    }
 }
