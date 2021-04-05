@@ -7,7 +7,6 @@ pipeline {
                 sh '''
                     #!/bin/bash
                     cd /var/lib/jenkins/workspace/pipeline_test/test_repo
-                    git config pull.rebase false
                     git pull https://github.com/adhig93/test_repo
                     make
                    '''              
