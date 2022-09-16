@@ -8,9 +8,9 @@ pipeline {
                 sh 'sleep 5'             
             }
         }
-        stage('Stage2:Test') {
+        stage('Stage2:Push') {
             steps {
-                echo 'This is Test Stage'
+                echo 'This is Push Stage'
                 sh 'sleep 5'
             }
         }
